@@ -3,5 +3,6 @@ Rainbow Six Siege Recoil Assist, with AutoHotKey.
 
 Made with significant help from [Coach.Sludge](https://github.com/CoachSludge)
 ### With 69 savable presets for each operator
-![atta](https://github.com/CoachSludge/R6S_AC/assets/141787395/18301b6e-709d-4b55-bb4f-59bffd32cae6)
-![defe](https://github.com/CoachSludge/R6S_AC/assets/141787395/46c5855a-aeda-4c89-9789-1a14710447d1)
+
+![atta](https://github.com/xz444/Nisse/assets/141787395/37d7601d-7460-4e4b-8701-c60306f6a974)
+![defe](https://github.com/xz444/Nisse/assets/141787395/4055ff8a-0de6-4c78-abf5-06bd1baa71e5)
