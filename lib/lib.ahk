@@ -1,4 +1,4 @@
-﻿#singleInstance force
+#singleInstance force
 scriptDir := A_ScriptDir
 ConfigFile := scriptDir "\..\config\config.ini"
 ;--------------------------import from config------------------------------------;
@@ -210,6 +210,9 @@ IniRead, check_Solis1, %ConfigFile%, Defenders, Solis1
 
 IniRead, Speed_Fenrir, %ConfigFile%, Defenders, Fenrir
 IniRead, check_Fenrir1, %ConfigFile%, Defenders, Fenrir1
+
+IniRead, Speed_Tubarao, %ConfigFile%, Defenders, Tubarai
+IniRead, check_Tubarao1, %ConfigFile%, Defenders, Tubarao1
 ;---------------------------------outside loop off------------------------------------------------;
 ; Initialize attackers
 Sledge2 := false
@@ -282,6 +285,7 @@ Thorn2 := false
 Azami2 := false
 Solis2 := false
 Fenrir2 := false
+Tubarao2 := false
 ;----------------------------------loop config------------------------------;
 loop {
 
@@ -355,6 +359,7 @@ if (check_Sledge1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Thatcher1 = 1) {
 	Sledge2 := false
@@ -426,6 +431,7 @@ if (check_Thatcher1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Ash1 = 1) {
 	Sledge2 := false
@@ -497,6 +503,7 @@ if (check_Ash1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Thermite1 = 1) {
 	Sledge2 := false
@@ -568,6 +575,7 @@ if (check_Thermite1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Twitch1 = 1) {
 	Sledge2 := false
@@ -639,6 +647,7 @@ if (check_Twitch1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Montagne1 = 1) {
 	Sledge2 := false
@@ -710,6 +719,7 @@ if (check_Montagne1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Glaz1 = 1) {
 	Sledge2 := false
@@ -781,6 +791,7 @@ if (check_Glaz1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Fuze1 = 1) {
 	Sledge2 := false
@@ -852,6 +863,7 @@ if (check_Fuze1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Blitz1 = 1) {
 	Sledge2 := false
@@ -923,6 +935,7 @@ if (check_Blitz1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_IQ1 = 1) {
 	Sledge2 := false
@@ -994,6 +1007,7 @@ if (check_IQ1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Buck1 = 1) {
 	Sledge2 := false
@@ -1065,6 +1079,7 @@ if (check_Buck1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Blackbeard1 = 1) {
 	Sledge2 := false
@@ -1136,6 +1151,7 @@ if (check_Blackbeard1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Capitao1 = 1) {
 	Sledge2 := false
@@ -1207,6 +1223,7 @@ if (check_Capitao1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Hibana1 = 1) {
 	Sledge2 := false
@@ -1278,6 +1295,7 @@ if (check_Hibana1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Jackal1 = 1) {
 	Sledge2 := false
@@ -1349,6 +1367,7 @@ if (check_Jackal1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Ying1 = 1) {
 	Sledge2 := false
@@ -1420,6 +1439,7 @@ if (check_Ying1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Zofia1 = 1) {
 	Sledge2 := false
@@ -1491,6 +1511,7 @@ if (check_Zofia1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Dokkaebi1 = 1) {
 	Sledge2 := false
@@ -1562,6 +1583,7 @@ if (check_Dokkaebi1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Lion1 = 1) {
 	Sledge2 := false
@@ -1633,6 +1655,7 @@ if (check_Lion1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Finka1 = 1) {
 	Sledge2 := false
@@ -1704,6 +1727,7 @@ if (check_Finka1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Maverick1 = 1) {
 	Sledge2 := false
@@ -1775,6 +1799,7 @@ if (check_Maverick1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Nomad1 = 1) {
 	Sledge2 := false
@@ -1846,6 +1871,7 @@ if (check_Nomad1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Gridlock1 = 1) {
 	Sledge2 := false
@@ -1917,6 +1943,7 @@ if (check_Gridlock1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Nokk1 = 1) {
 	Sledge2 := false
@@ -1988,6 +2015,7 @@ if (check_Nokk1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Amaru1 = 1) {
 	Sledge2 := false
@@ -2059,6 +2087,7 @@ if (check_Amaru1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Kali1 = 1) {
 	Sledge2 := false
@@ -2130,6 +2159,7 @@ if (check_Kali1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 
 ; For each attacker (Continued)
@@ -2203,6 +2233,7 @@ if (check_Iana1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Ace1 = 1) {
 	Sledge2 := false
@@ -2274,6 +2305,7 @@ if (check_Ace1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Zero1 = 1) {
 	Sledge2 := false
@@ -2345,6 +2377,7 @@ if (check_Zero1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Flores1 = 1) {
 	Sledge2 := false
@@ -2416,6 +2449,7 @@ if (check_Flores1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Osa1 = 1) {
 	Sledge2 := false
@@ -2487,6 +2521,7 @@ if (check_Osa1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Sens1 = 1) {
 	Sledge2 := false
@@ -2558,6 +2593,7 @@ if (check_Sens1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Grim1 = 1) {
 	Sledge2 := false
@@ -2629,6 +2665,7 @@ if (check_Grim1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Brava1 = 1) {
 	Sledge2 := false
@@ -2700,6 +2737,7 @@ if (check_Brava1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 if (check_Ram1 = 1) {
 	Sledge2 := false
@@ -2771,6 +2809,7 @@ if (check_Ram1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 }
 ;----------------------defenders-----------------;
 if (check_Smoke1 = 1) {
@@ -2807,6 +2846,7 @@ if (check_Smoke1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -2878,6 +2918,7 @@ if (check_Mute1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -2949,6 +2990,7 @@ if (check_Castle1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3020,6 +3062,7 @@ if (check_Pulse1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3091,6 +3134,7 @@ if (check_Doc1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3162,6 +3206,7 @@ if (check_Rook1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3233,6 +3278,7 @@ if (check_Kapkan1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3304,6 +3350,7 @@ if (check_Tachanka1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3375,6 +3422,7 @@ if (check_Jager1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3446,6 +3494,7 @@ if (check_Bandit1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3517,6 +3566,7 @@ if (check_Frost1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3590,6 +3640,7 @@ if (check_Valkyrie1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3661,6 +3712,7 @@ if (check_Cavira1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3734,6 +3786,7 @@ if (check_Echo1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3805,6 +3858,7 @@ if (check_Lesion1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3878,6 +3932,7 @@ if (check_Ela1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -3949,6 +4004,7 @@ if (check_Virgil1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4022,6 +4078,7 @@ if (check_Maestro1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4093,6 +4150,7 @@ if (check_Alibi1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4166,6 +4224,7 @@ if (check_Clash1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4237,6 +4296,7 @@ if (check_Kaid1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4310,6 +4370,7 @@ if (check_Mozzie1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4381,6 +4442,7 @@ if (check_Warden1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4454,6 +4516,7 @@ if (check_Goyo1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4525,6 +4588,7 @@ if (check_Wamai1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4598,6 +4662,7 @@ if (check_Oryx1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4669,6 +4734,7 @@ if (check_Melusi1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4742,6 +4808,7 @@ if (check_Aruni1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4813,6 +4880,7 @@ if (check_Thunderbird1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4886,6 +4954,7 @@ if (check_Thorn1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -4957,6 +5026,7 @@ if (check_Azami1 = 1) {
 	Azami2 := true
 	Solis2 := false
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -5030,6 +5100,7 @@ if (check_Solis1 = 1) {
 	Azami2 := false
 	Solis2 := true
 	Fenrir2 := false
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -5103,6 +5174,7 @@ if (check_Fenrir1 = 1) {
 	Azami2 := false
 	Solis2 := false
 	Fenrir2 := true
+	Tubarao2 := false
 	;attackers----------
 	Sledge2 := false
 	Thatcher2 := false
@@ -5141,6 +5213,78 @@ if (check_Fenrir1 = 1) {
 	Ram2 := false
 }
 
+if (check_Fenrir1 = 1) {
+	Smoke2 := false
+	Mute2 := false
+	Castle2 := false
+	Pulse2 := false
+	Doc2 := false
+	Rook2 := false
+	Kapkan2 := false
+	Tachanka2 := false
+	Jager2 := false
+	Bandit2 := false
+	Frost2 := false
+	Valkyrie2 := false
+	Cavira2 := false
+	Echo2 := false
+	Lesion2 := false
+	Ela2 := false
+	Virgil2 := false
+	Maestro2 := false
+	Alibi2 := false
+	Clash2 := false
+	Kaid2 := false
+	Mozzie2 := false
+	Warden2 := false
+	Goyo2 := false
+	Wamai2 := false
+	Oryx2 := false
+	Melusi2 := false
+	Aruni2 := false
+	Thunderbird2 := false
+	Thorn2 := false
+	Azami2 := false
+	Solis2 := false
+	Fenrir2 := false
+	Tubarao2 := true
+	;attackers----------
+	Sledge2 := false
+	Thatcher2 := false
+	Ash2 := false
+	Thermite2 := false
+	Twitch2 := false
+	Montagne2 := false
+	Glaz2 := false
+	Fuze2 := false
+	Blitz2 := false
+	IQ2 := false
+	Buck2 := false
+	Blackbeard2 := false
+	Capitao2 := false
+	Hibana2 := false
+	Jackal2 := false
+	Ying2 := false
+	Zofia2 := false
+	Dokkaebi2 := false
+	Lion2 := false
+	Finka2 := false
+	Maverick2 := false
+	Nomad2 := false
+	Gridlock2 := false
+	Nokk2 := false
+	Amaru2 := false
+	Kali2 := false
+	Iana2 := false
+	Ace2 := false
+	Zero2 := false
+	Flores2 := false
+	Osa2 := false
+	Sens2 := false
+	Grim2 := false
+	Brava2 := false
+	Ram2 := false
+}
 
 
 
@@ -5283,8 +5427,10 @@ if (check_Fenrir1 = 1) {
 		SetTimer, DragDown67, % 10 / Speed_Solis, Solis
 	} else if (Fenrir2) {
 		SetTimer, DragDown68, % 10 / Speed_Fenrir, Fenrir
+	} else if (Tubarao2) {
+		SetTimer, DragDown69, % 10 / Speed_Tubarao, Tubarao
 	}
-
+	
     return
 ;----------------------------------------------------------------------------------------UP------------------------------------------;
 ~RButton & LButton Up::
@@ -5424,6 +5570,8 @@ if (check_Fenrir1 = 1) {
 		SetTimer, DragDown67, Off
 	} else if (Fenrir2) {
 		SetTimer, DragDown68, Off
+	} else if (Tubarao2) {
+		SetTimer, DragDown69, Off
 	}
     return
 ;---------------------------------------------dragdown varients-------------------------------;
@@ -5698,6 +5846,10 @@ DragDown67:
 
 DragDown68:
     DllCall("mouse_event", "UInt", 0x01, "UInt", 0, "UInt", 1 + Speed_Fenrir)
+    return
+
+DragDown69:
+    DllCall("mouse_event", "UInt", 0x01, "UInt", 0, "UInt", 1 + Speed_Tubarao)
     return
 
 }
