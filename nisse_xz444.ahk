@@ -1,4 +1,3 @@
-;run as may not be needed;
 if not A_IsAdmin
 {
 Run *RunAs "%A_ScriptFullPath%"
@@ -8,7 +7,7 @@ ExitApp
 Gui, Add, Tab3, x0 y5 w700 h500, Attackers|Defenders|Settings
 Gui, Show, x600 y260 h500 w695, R6AC
 Gui Tab, 1
-Gui, Add, Picture, x0 y0 w725 h530 0x4000000, dump\back.jpg
+Gui, Add, Picture, x0 y0 w725 h530 0x4000000, assets\back.jpg
 
 Gui, Add, GroupBox, x35 y59 w80 h60, Sledge
 Gui, Add, Edit, x45 y80 w60 h30 vSledge, 1
@@ -187,7 +186,7 @@ GuiControl,, Brava, % GetIniValue(IniFile, "Attackers", "Brava")
 GuiControl,, Ram, % GetIniValue(IniFile, "Attackers", "Ram")
 
 Gui Tab, 2
-Gui, Add, Picture, x0 y0 w725 h530 0x4000000, dump\back.jpg
+Gui, Add, Picture, x0 y0 w725 h530 0x4000000, assets\back.jpg
 
 Gui, Add, GroupBox, x35 y59 w80 h60, Smoke
 Gui, Add, Edit, x45 y80 w60 h30 vSmoke, 1
@@ -325,6 +324,10 @@ Gui, Add, GroupBox, x510 y403 w80 h60, Fenrir
 Gui, Add, Edit, x520 y424 w60 h30 vFenrir, 1
 Gui, Add, CheckBox, x510 y469 vFenrir1, Enable
 
+Gui, Add, GroupBox, x605 y403 w80 h60, Tubarao
+Gui, Add, Edit, x615 y424 w60 h30 vTubarao, 1
+Gui, Add, CheckBox, x605 y469 vTubarao1, Enable
+
 IniFile := "config\config.ini"
 GuiControl,, Smoke, % GetIniValue(IniFile, "Defenders", "Smoke")
 GuiControl,, Mute, % GetIniValue(IniFile, "Defenders", "Mute")
@@ -360,9 +363,10 @@ GuiControl,, Thorn, % GetIniValue(IniFile, "Defenders", "Thorn")
 GuiControl,, Azami, % GetIniValue(IniFile, "Defenders", "Azami")
 GuiControl,, Solis, % GetIniValue(IniFile, "Defenders", "Solis")
 GuiControl,, Fenrir, % GetIniValue(IniFile, "Defenders", "Fenrir")
+GuiControl,, Tubarao, % GetIniValue(IniFile, "Defenders", "Tubarao")
 
 Gui Tab, 3
-Gui, Add, Picture, x0 y0 w725 h530 0x4000000, dump\back.jpg
+Gui, Add, Picture, x0 y0 w725 h530 0x4000000, assets\back.jpg
 Gui, Add, Button, x35 y59 w100 h80 gGenerateConfig , Save / Reload
 Gui, Add, Button, x145 y59 w100 h80 gopen, Run
 Gui, Add, Button, x255 y59 w100 h80 gclose , Kill
@@ -458,6 +462,7 @@ GenerateConfig:
 	SaveOperatorSettings(IniFile, "Azami", Azami, Azami1)
 	SaveOperatorSettings(IniFile, "Solis", Solis, Solis1)
 	SaveOperatorSettings(IniFile, "Fenrir", Fenrir, Fenrir1)
+	SaveOperatorSettings(IniFile, "Tubarao", Tubarao, Tubarao1
     ; ... (Repeat for other defenders)
 
     Msg := "Settings have been saved!"
@@ -481,4 +486,4 @@ Return
 GuiClose:
 ExitApp
 ;Attackers = Sledge, Thatcher, Ash, Thermite, Twitch, Montagne, Glaz, Fuze, Blitz, IQ, Buck, Blackbeard, Capitao, Hibana, Jackal, Ying, Zofia, Dokkaebi, Lion, Finka, Maverick, Nomad, Gridlock, Nokk, Amaru, Kali, Iana, Ace, Zero, Flores, Osa, Sens, Grim, Brava, Ram;
-;Defenders = Smoke, Mute, Castle, Pulse, Doc, Rook, Kapkan, Tachanka, Jager, Bandit, Frost, Valkyrie, Cavira, Echo, Lesion, Ela, Virgil, Maestro, Alibi, Clash, Kaid, Mozzie, Warden, Goyo, Wamai, Oryx, Melusi, Aruni, Thunderbird, Thorn, Azami, Solis, Fenrir;
+;Defenders = Smoke, Mute, Castle, Pulse, Doc, Rook, Kapkan, Tachanka, Jager, Bandit, Frost, Valkyrie, Cavira, Echo, Lesion, Ela, Virgil, Maestro, Alibi, Clash, Kaid, Mozzie, Warden, Goyo, Wamai, Oryx, Melusi, Aruni, Thunderbird, Thorn, Azami, Solis, Fenrir, Tubarao;
