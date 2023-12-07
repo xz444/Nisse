@@ -1,7 +1,7 @@
 Run, lib\lib.exe
 
 Gui, Add, Tab3, x0 y5 w700 h575, Attackers|Defenders|Recruits
-Gui, Show, x600 y260 h575 w695, R6AC
+Gui, Show, x600 y260 h575 w695, Nisse
 
 Gui Tab, 1
 Gui, Add, Picture, x0 y0 w725 h575 0x4000000, assets\back.jpg
