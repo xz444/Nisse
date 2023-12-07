@@ -1,4 +1,4 @@
-# Nisse
+# Nisse R6
 Rainbow Six Siege Recoil Assist, with AutoHotKey.
 
 Made with significant help from [Coach.Sludge](https://github.com/CoachSludge)
