@@ -211,7 +211,7 @@ IniRead, check_Solis1, %ConfigFile%, Defenders, Solis1
 IniRead, Speed_Fenrir, %ConfigFile%, Defenders, Fenrir
 IniRead, check_Fenrir1, %ConfigFile%, Defenders, Fenrir1
 
-IniRead, Speed_Tubarao, %ConfigFile%, Defenders, Tubarai
+IniRead, Speed_Tubarao, %ConfigFile%, Defenders, Tubarao1
 IniRead, check_Tubarao1, %ConfigFile%, Defenders, Tubarao1
 ;---------------------------------outside loop off------------------------------------------------;
 ; Initialize attackers
