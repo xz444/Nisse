@@ -506,8 +506,6 @@ GenerateConfig:
 	Process, Close, lib.exe
 	Run, lib\lib.exe
 	
-    Msg := "Settings have been saved!"
-    MsgBox, %Msg%
     Return
 
 SaveOperatorSettings(IniFile, Operator, Speed, Checkbox) {
