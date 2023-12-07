@@ -462,7 +462,7 @@ GenerateConfig:
 	SaveOperatorSettings(IniFile, "Azami", Azami, Azami1)
 	SaveOperatorSettings(IniFile, "Solis", Solis, Solis1)
 	SaveOperatorSettings(IniFile, "Fenrir", Fenrir, Fenrir1)
-	SaveOperatorSettings(IniFile, "Tubarao", Tubarao, Tubarao1
+	SaveOperatorSettings(IniFile, "Tubarao", Tubarao, Tubarao1)
     ; ... (Repeat for other defenders)
 
     Msg := "Settings have been saved!"
